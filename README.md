@@ -6,10 +6,10 @@ Course Project for "Getting and Cleaning Data"
 You can change the working directory by: 
 setwd("where your data is located")
 
-Additionally, the final product is called foo.csv - if you open in Excel, there will be row numbers.
+Additionally, the final product is called foo.txt.  
 
-Otherwise, I encourage you to open the csv file using:
-  tidy_df <- read.csv("foo.csv", row.names=1)
+I encourage you to open the text file in R using:
+  tidy_df <- read.table("foo.txt", header = TRUE)
   
 This should result in a dataframe titled "tidy_df" with 180 rows of 81 variables.  
 There are 180 rows since I calculated the "mean" within each subset of "activities"
@@ -44,5 +44,5 @@ I already added the column headers when I read the .txt files
 At this point I calculated the mean values for each subject within the subset of each activity (30 subjects x 6 activities = 180 rows)
 
 # Last Step
-Saving the tidy dataframe as foo.csv
+Saving the tidy dataframe as foo.txt
 
