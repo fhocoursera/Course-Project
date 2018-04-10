@@ -3,22 +3,22 @@ Course Project for "Getting and Cleaning Data"
 
 *** Before running the "run_analysis.R" script - ensure the working directory is the base data file (..//UCI HAR Dataset)
 
-You can change the working directory by:
+You can change the working directory by: 
 setwd("where your data is located")
 
-Additionally, the final product is called foo.csv - if you open in Excel, there will be row numbers
+Additionally, the final product is called foo.csv - if you open in Excel, there will be row numbers.
 
 Otherwise, I encourage you to open the csv file using:
   tidy_df <- read.csv("foo.csv", row.names=1)
   
-This should result in a dataframe titled "tidy_df" with 180 rows of 81 variables
+This should result in a dataframe titled "tidy_df" with 180 rows of 81 variables.  
 There are 180 rows since I calculated the "mean" within each subset of "activities"
 
 # Explination of R.Script #
-There are comments within the R.Script, but I'll summarize here.
+There are comments within the R.Script, but I'll summarize here.  
 
-First we ensure the working directory is the data file
-I stored the column headers in a list (features_head); and removed the numbers prior to the heading titles
+First we ensure the working directory is the data file.  
+I stored the column headers in a list (features_head); and removed the numbers prior to the heading titles.  
 
 Then we moved into the Test Directory
 1. read the subject numbers
